@@ -1,0 +1,43 @@
+.post-editor {
+    padding: 10px;
+  }
+  
+  
+  form {
+    width: 50%;
+  }
+  
+  .form-input {
+    margin:10px 10px;
+  }
+  
+  .form-input input, .form-input textarea {
+    width: 100%;
+    font-size:  1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    border: 1px solid lightgray;
+    padding: 0.3rem 0.7rem;
+    outline: none;
+  }
+  
+  
+  .submit-button{
+    background-color: lightskyblue;
+    color:midnightblue;
+    padding: 0.3rem 0.3rem;
+    font-size:  1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  
+  
+  }
+  
+  .project-post-display {
+    border: 1px solid lightgray;
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 5px;
+  
+  }
