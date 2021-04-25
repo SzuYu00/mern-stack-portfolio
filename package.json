@@ -15,7 +15,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd client && cd npm run build",
+    "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
     "aws-postbuild": "npm run install-client && npm run build",
     "start": "node server.js",
