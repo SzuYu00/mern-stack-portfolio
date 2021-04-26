@@ -211,6 +211,7 @@
 
 @media screen and (max-width: 768px) {
   .project-post{
+    margin: 0.5rem;
     padding: 1.5rem;
     flex-direction: column;
   }
