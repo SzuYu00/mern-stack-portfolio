@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   border-radius: 1rem;
-  max-height: 85rem;
+  /*max-height: 85rem;*/
 }
 
 
@@ -135,7 +135,7 @@
   size: 100%;
   padding: 1rem 0;
   margin-top: 0;
-
+  
 }
 
 
@@ -200,6 +200,10 @@
     transform: translate(0, -4rem);
   }
 
+  .post-context {
+    transform: translate(0, -4rem);
+  }
+
   .post-media-projects,
   .post-media-experience,
   .post-media-intro {
@@ -221,6 +225,11 @@
     max-width: 100%;
     transform: translate(0, -4rem);
   }
+
+  .post-context {
+    transform: translate(0, -4rem);
+  }
+
 
   .post-media-projects,
   .post-media-experience,
