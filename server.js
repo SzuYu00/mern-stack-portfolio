@@ -47,6 +47,10 @@ app.use(express.urlencoded({extended: false})); //extended: true for looking in 
 app.use(morgan('tiny'));
 app.use('/api', routes);
 
+//Heroku production comfirmation
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+}
 
 
 app.listen(PORT, console.log(`Server is starting at ${PORT}`));
