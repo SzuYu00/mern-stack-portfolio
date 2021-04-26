@@ -22,6 +22,7 @@ export default function Projects() {
             postType='projects' 
             nameSkills='Skills Required' 
             nameAbility='Abilities Required'
+            moreInfo='Related Link'
         
         />
 

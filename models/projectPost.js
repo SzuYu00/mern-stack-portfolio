@@ -11,6 +11,7 @@ const ProjectPostSchema = new Schema({
     ability: String,
     image: String,
     body: String,
+    moreInfo: String,
     tag: String,
     label: String,
     date: {

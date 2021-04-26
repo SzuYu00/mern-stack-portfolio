@@ -62,6 +62,14 @@ export class PostStream extends React.Component {
                 {/* <span className='post-text'>{post.body.split("\n")}</span> */}
                 {/* <p className='post-text'>{post.body.replace(/(\r\n|\n|\r)/gm, "<br />")}</p> */}
                 {/* <a href='#' className='post-read-more'>Read More</a> */}
+                <div  className='post-info'>
+                  <h4>{this.props.moreInfo}</h4>
+                  <a href={`${post.moreInfo}`} 
+                            target='_blank' 
+                            rel='noreferrer'>
+                    {post.moreInfo}
+                  </a>
+                </div>
               </div>
               
           
