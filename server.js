@@ -5,7 +5,7 @@ const path = require('path');
 
 const dotenv = require('dotenv').config() //
 
-const history = require('connect-history-api-fallback');//to fix refresh "Connot GET /API" error
+// const history = require('connect-history-api-fallback');//to fix refresh "Connot GET /API" error
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -24,13 +24,13 @@ mongoose.connection.on('connected', () => {
 });
 
 //"Connot GET /API" error fix
-const staticFileMiddleware = express.static('assets');
-app.use(staticFileMiddleware);
-app.use(history({
-  disableDotRule: true,
-  verbose: true
-}));
-app.use(staticFileMiddleware);
+// const staticFileMiddleware = express.static('assets');
+// app.use(staticFileMiddleware);
+// app.use(history({
+//   disableDotRule: true,
+//   verbose: true
+// }));
+// app.use(staticFileMiddleware);
 
 //Data parsing; transfer all requests into json or url encoded (to be avaiaable in request.body)
 app.use(express.json());
