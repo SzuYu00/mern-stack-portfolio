@@ -9,6 +9,7 @@ const history = require('connect-history-api-fallback');//to fix refresh "Connot
 
 const app = express();
 
+
 const PORT = process.env.PORT || 8080;
 
 const routes = require('./routes/api')
@@ -33,7 +34,7 @@ mongoose.connection.on('connected', () => {
 //   verbose: true
 // }));
 // app.use(staticFileMiddleware);
-app.use(history);
+app.use(history());
 //^___fixing needed before deploy
 
 //Data parsing; transfer all requests into json or url encoded (to be avaiaable in request.body)
