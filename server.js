@@ -32,7 +32,7 @@ mongoose.connection.on('connected', () => {
 // }));
 // app.use(staticFileMiddleware);
 
-//Data parsing; transfer all requests into json or url encoded (to be avaiaable in request.body)
+//Data parsing; transfer all requests into json or url encoded (to be avaiable in request.body)
 app.use(express.json());
 app.use(express.urlencoded({extended: false})); //extended: true for looking in highly nested data
 
