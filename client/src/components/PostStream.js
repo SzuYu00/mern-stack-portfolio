@@ -58,7 +58,8 @@ export class PostStream extends React.Component {
                   <h4>{this.props.nameAbility}</h4>
                   <p>{post.ability}</p>
                 </div>
-                <p className='post-text'>{post.body.split('\n')}</p>
+                <p className='post-text'>{post.body}</p>
+                {/* <p className='post-text'>{post.body.split('\n')}</p> */}
                 {/* <span className='post-text'>{post.body.split("\n")}</span> */}
                 {/* <p className='post-text'>{post.body.replace(/(\r\n|\n|\r)/gm, "<br />")}</p> */}
                 {/* <a href='#' className='post-read-more'>Read More</a> */}
